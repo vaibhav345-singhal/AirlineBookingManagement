@@ -465,7 +465,7 @@ public class SearchCustomers extends javax.swing.JInternalFrame {
                     String dob = rs.getString("dob");
                     try {
                         Date date = new SimpleDateFormat("yyyy-MM-dd").parse(dob);
-                        
+                        this.dob.setDate(date);
                         
                     } catch (ParseException ex) {
                         Logger.getLogger(SearchCustomers.class.getName()).log(Level.SEVERE, null, ex);

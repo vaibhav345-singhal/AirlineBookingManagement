@@ -713,6 +713,7 @@ public class BookTicket extends javax.swing.JInternalFrame {
                     String dob = rs.getString("dob");
                     try {
                         Date date = new SimpleDateFormat("yyyy-MM-dd").parse(dob);
+                        this.dob.setDate(date);
 
                     } catch (ParseException ex) {
                         Logger.getLogger(BookTicket.class.getName()).log(Level.SEVERE, null, ex);
